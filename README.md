@@ -1,2 +1,3 @@
 # Intern_experiences_at_Baidu
-一些积累的经验
+## 1. read_data.py
+###是PaddlePaddle按数据条数来读取数据的，成batch.
