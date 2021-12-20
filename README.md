@@ -7,4 +7,5 @@ PaddlePaddle按数据条数来读取数据的，成batch;
 vocab形式为：
 HED\nprov\n
 
-.
+## 2. paddle动转静
+出现assign错误，首先就要考虑paddle的版本问题
