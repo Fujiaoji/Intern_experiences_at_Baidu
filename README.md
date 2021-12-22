@@ -9,3 +9,9 @@ HED\nprov\n
 
 ## 2. paddle动转静
 出现assign错误，首先就要考虑paddle的版本问题
+
+# NER知识积累
+## from "Modularized Interaction Network for Named Entity Recognition"
+1) NER可以包含两类: Sequence labeling-based methods, Segment-based methods
+2) NER分着看的话，可以将其分成两步: boundary detection, type prediction
+3) pointer network (from "Pointer networks")
