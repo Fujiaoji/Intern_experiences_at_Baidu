@@ -21,7 +21,11 @@ HED\nprov\n
 >给一个句子，给一个span， binary classifier决定span是不是constituenct, 然后用multi-class classifier决定label
 
 解法-
->Chart-based methods
+>1. Chart-based methods
+>>有可能出现矛盾状况-->穷举所有可能的树状结构(CKY), 合法-->找分数高的
+
+>2. transition-based methods
+>>RNN决定采取哪个action
 
 # NER知识积累
 ## 1. from "Modularized Interaction Network for Named Entity Recognition"
@@ -35,8 +39,6 @@ What-
 >1) NER可以包含两类: Sequence labeling-based methods, Segment-based methods
 >2) NER分着看的话，可以将其分成两步: boundary detection, type prediction
 >3) pointer network (from "Pointer networks")
-
-
 
 
 ## 2. from "Locate and Label: A Two-stage Identifier for Nested Named Entity Recognition"
@@ -97,7 +99,7 @@ Gazetteers 的limitations-
 
 >1. Mention Detection (MD) is a simpler task of identifying entity spans, without the types
 
-# 6. Better Feature Integration for Named Entity Recognition
+## 6. Better Feature Integration for Named Entity Recognition
 Why
 >1. 当前方法在捕获contextual info(captured bu linear sequences)与structured info(captured by dependency tree)时, 聚焦于stack LSTM与GNN， 真正的两者之间的关系没有捕获到
 >2. 难以捕获长距离dependency
